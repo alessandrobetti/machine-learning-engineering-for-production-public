@@ -10,7 +10,7 @@ app = FastAPI(title="Predicting Wine Class with batching")
 # Remark: the classifier is loaded directly into global state instead of within a 
 # function that runs when the server is started. This is done because you will be performing unit 
 # tests on the classifier without starting the server
-with open("models/wine.pkl", "rb") as file:
+with open("models/wine-95.pkl", "rb") as file:
     clf = pickle.load(file)
 
 
